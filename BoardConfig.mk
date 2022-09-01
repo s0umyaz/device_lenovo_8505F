@@ -47,6 +47,8 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 buildvariant=user
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
+BOARD_PREBUILT_DTBOIMAGE := device/lenovo/akita_row_wifi/prebuilt/dtbo.img
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -59,8 +61,6 @@ BOARD_DTB_SIZE := 99298
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-BOARD_PREBUILT_DTBOIMAGE := device/lenovo/akita_row_wifi/prebuilt/dtbo.img
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 
 BOARD_MKBOOTIMG_ARGS := \
         --kernel_offset $(BOARD_KERNEL_OFFSET) \
@@ -73,7 +73,7 @@ BOARD_MKBOOTIMG_ARGS := \
         --dtb_offset $(BOARD_DTB_OFFSET) \
         --recovery_dtbo $(BOARD_PREBUILT_DTBOIMAGE)
         
-        TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 
 # MTK Hardware
