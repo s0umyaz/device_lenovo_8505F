@@ -47,7 +47,7 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 buildvariant=user
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb/mt6761.dtb
 TARGET_KERNEL_SOURCE := kernel/lenovo/akita_row_wifi
 TARGET_KERNEL_CONFIG := akita_row_wifi_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
