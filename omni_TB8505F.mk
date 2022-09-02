@@ -11,7 +11,7 @@ $(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/full_base_telephony.
 $(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Inherit from akita_row_wifi device
-$(call inherit-product, device/lenovo/akita_row_wifi/device.mk)
+$(call inherit-product, device/lenovo/TB8505F/device.mk)
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
