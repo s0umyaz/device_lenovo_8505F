@@ -49,9 +49,9 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
 
 # Kernel
-BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 buildvariant=user
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz
 BOARD_PREBUILT_DTBOIMAGE := device/lenovo/TB8505F/prebuilt/dtbo.img
 TARGET_PREBUILT_DTB := device/lenovo/TB8505F/prebuilt/dtb.img
 BOARD_BOOTIMG_HEADER_VERSION := 2
