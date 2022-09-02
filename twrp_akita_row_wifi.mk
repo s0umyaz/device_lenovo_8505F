@@ -14,12 +14,12 @@ $(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, device/lenovo/akita_row_wifi/device.mk)
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product-if-exists, vendor/omni/config/gsm.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product-if-exists, vendor/twrp/config/gsm.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := akita_row_wifi
-PRODUCT_NAME := omni_akita_row_wifi
+PRODUCT_NAME := twrp_akita_row_wifi
 PRODUCT_BRAND := Lenovo
 PRODUCT_MODEL := Lenovo TB-8505F
 PRODUCT_MANUFACTURER := lenovo
