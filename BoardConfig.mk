@@ -97,10 +97,10 @@ TARGET_SCREEN_WIDTH := 800
 # Recovery Stuff
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab  
-RECOVERY_SDCARD_ON_DATA := true
+# RECOVERY_SDCARD_ON_DATA := true
 
 # Making the recovery image smaller
-BOARD_HAS_NO_REAL_SDCARD := true
+# BOARD_HAS_NO_REAL_SDCARD := true
 
 # TWRP Advanced Configuration
 TW_DEFAULT_LANGUAGE := en
