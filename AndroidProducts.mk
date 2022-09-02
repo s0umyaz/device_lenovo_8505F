@@ -6,7 +6,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_akita_row_wifi.mk
+    $(LOCAL_DIR)/omni_TB8505F.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_akita_row_wifi-eng
+    omni_TB8505F-eng
