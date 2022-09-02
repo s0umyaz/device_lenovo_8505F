@@ -47,8 +47,9 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 buildvariant=user
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
-BOARD_PREBUILT_DTBOIMAGE := device/lenovo/akita_row_wifi/prebuilt/dtbo.img
-TARGET_PREBUILT_DTB := device/lenovo/akita_row_wifi/prebuilt/dtb.img
+TARGET_KERNEL_SOURCE := kernel/lenovo/akita_row_wifi
+TARGET_KERNEL_CONFIG := akita_row_wifi_defconfig
+TARGET_KERNEL_CLANG_COMPILE := true
 BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_PAGESIZE := 2048
