@@ -1,0 +1,8 @@
+[
+  {
+    "remote": "github",
+    "repository": "CoderCharmander/tb8505f-kernel",
+    "target_path": "kernel/lenovo/akita_row_wifi",
+    "branch": "master"
+  }
+]
