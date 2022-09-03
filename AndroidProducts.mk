@@ -6,7 +6,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_akita_row_wifi.mk
+    $(LOCAL_DIR)/twrp_TB8505F.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_akita_row_wifi-eng
+    twrp_TB8505F-eng
