@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/lenovo/akita_row_wifi
+DEVICE_PATH := device/lenovo/TB8505F
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -26,7 +26,7 @@ TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := akita_row_wifi
+TARGET_OTA_ASSERT_DEVICE := TB8505F
 
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -52,7 +52,7 @@ BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 TARGET_RECOVERY_INITRC := $(DEVICE_PATH)/recovery/root/init.recovery.mt6761.rc
-TARGET_KERNEL_SOURCE := kernel/lenovo/akita_row_wifi
+TARGET_KERNEL_SOURCE := kernel/lenovo/TB8505F
 TARGET_KERNEL_CONFIG := akita_row_wifi_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 BOARD_BOOTIMG_HEADER_VERSION := 2
@@ -155,8 +155,8 @@ TW_INCLUDE_FBE_METADATA_DECRYPT := true
 # use SHRP Stuff
 
 SHRP_MAINTAINER := carlodeeCrypton
-SHRP_DEVICE_CODE := akita_row_wifi
-SHRP_PATH := device/lenovo/akita_row_wifi
+SHRP_DEVICE_CODE := TB8505F
+SHRP_PATH := device/lenovo/TB8505F
 SHRP_REC_TYPE := Treble
 SHRP_DEVICE_TYPE := A_Only
 SHRP_NOTCH := false
