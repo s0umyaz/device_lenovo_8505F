@@ -1,5 +1,9 @@
 name: TWRP Akita Row Wifi
 
+# Credits to https://github.com/azwhikaru/
+# Credits to https://github.com/twrpdtgen/ (SebaUbuntu's creation)
+# Credits to https://github.com/minimal-manifest-twrp/ (TeamWin's creation)
+
 on:
   workflow_dispatch:
     inputs:
