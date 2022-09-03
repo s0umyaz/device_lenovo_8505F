@@ -113,7 +113,7 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libashmemd_client.so
 
 # Making the recovery image smaller
-BOARD_HAS_NO_REAL_SDCARD := true
+# BOARD_HAS_NO_REAL_SDCARD := true
 
 # TWRP Advanced Configuration
 TW_DEFAULT_LANGUAGE := en
