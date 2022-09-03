@@ -1,39 +1,12 @@
-#
-# ADDITIONAL_DEFAULT_PROPERTIES
-#
+# System Properties
+
 ro.actionable_compatible_property.enabled=true
 ro.postinstall.fstab.prefix=/system
 ro.secure=1
 security.perf_harden=1
 ro.adb.secure=1
-ro.allow.mock.location=0
 ro.factory_mode=0
-ro.debuggable=0
-debug.atrace.tags.enableflags=0
-dalvik.vm.image-dex2oat-Xms=64m
-dalvik.vm.image-dex2oat-Xmx=64m
-dalvik.vm.dex2oat-Xms=64m
-dalvik.vm.dex2oat-Xmx=512m
-dalvik.vm.usejit=true
-dalvik.vm.usejitprofiles=true
-dalvik.vm.dexopt.secondary=true
-dalvik.vm.appimageformat=lz4
-ro.dalvik.vm.native.bridge=0
-pm.dexopt.first-boot=quicken
-pm.dexopt.boot=verify
-pm.dexopt.install=speed-profile
-pm.dexopt.bg-dexopt=speed-profile
-pm.dexopt.ab-ota=speed-profile
-pm.dexopt.inactive=verify
-pm.dexopt.shared=speed
-dalvik.vm.dex2oat-resolve-startup-strings=true
-dalvik.vm.dex2oat-max-image-block-size=524288
-dalvik.vm.minidebuginfo=true
-dalvik.vm.dex2oat-minidebuginfo=true
-ro.iorapd.enable=false
-ro.telephony.sim.count=2
-ro.config.per_app_memcg=false
-persist.log.tag.Telecom=I
+ro.debuggable=1
 ro.mediatek.version.branch=alps-mp-q0.mp1
 ro.mediatek.version.release=alps-mp-q0.mp1-V9.56_lenovo.m8.q0mp1.tb8788p1.64.bsp_P4
 bluetooth.enable_timeout_ms=8000
@@ -51,7 +24,7 @@ ro.base_build=noah
 media.stagefright.thumbnail.prefer_hw_codecs=true
 vendor.mtk_thumbnail_optimization=true
 ro.audio.usb.period_us=16000
-persist.sys.usb.config=none
+persist.sys.usb.config=mtp,adb
 #
 # ADDITIONAL VENDOR DEFAULT PROPERTIES
 #
@@ -64,7 +37,7 @@ ro.mount.fs=EXT4
 ro.vendor.rc=/vendor/etc/init/hw/
 ro.oem_unlock_supported=1
 camera.disable_zsl_mode=1
-ro.logd.kernel=false
+ro.logd.kernel=true
 ro.bionic.arch=arm64
 ro.bionic.cpu_variant=cortex-a53
 ro.bionic.2nd_arch=arm
@@ -405,11 +378,7 @@ persist.function_for_sar=1
 persist.function_for_sar_log_trigger=0
 persist.switch.reduce.sar_power=0
 # end common build properties
-#
-# ADDITIONAL ODM BUILD PROPERTIES
-#
 
-#
 # ADDITIONAL PRODUCT PROPERTIES
 #
 ro.build.characteristics=tablet
