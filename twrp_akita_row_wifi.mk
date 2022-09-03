@@ -20,9 +20,9 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 $(call inherit-product-if-exists, vendor/twrp/config/gsm.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := akita_row_wifi
-PRODUCT_NAME := twrp_akita_row_wifi
+PRODUCT_DEVICE := TB8505F
+PRODUCT_NAME := twrp_TB8505F
 PRODUCT_BRAND := lenovo
-PRODUCT_MODEL := Lenovo TB-8505F
+PRODUCT_MODEL := Lenovo M8 HD
 PRODUCT_MANUFACTURER := lenovo
 PRODUCT_SHIPPING_API_LEVEL := 28
