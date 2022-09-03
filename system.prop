@@ -25,9 +25,6 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 vendor.mtk_thumbnail_optimization=true
 ro.audio.usb.period_us=16000
 persist.sys.usb.config=mtp,adb
-#
-# ADDITIONAL VENDOR DEFAULT PROPERTIES
-#
 ro.vndk.version=29
 ro.zygote=zygote64_32
 ro.logd.size.stats=64K
@@ -106,26 +103,6 @@ ro.build.product=akita_row_wifi
 ro.lenovo.series=Lenovo Tab M8
 # Do not try to parse description or thumbprint
 ro.build.description=full_akita_row_wifi-user 10 QP1A.190711.020 TB-8505F_U release-keys
-# end build properties
-
-#
-# from device/mediatek/system/common/system.prop
-#
-ro.product.property_source_order=odm,vendor,product,system
-
-vendor.rild.libpath=mtk-ril.so
-vendor.rild.libargs=-d /dev/ttyC0
-
-
-wifi.interface=wlan0
-ro.mediatek.wlan.wsc=1
-ro.mediatek.wlan.p2p=1
-mediatek.wlan.ctia=0
-
-
-#
-wifi.tethering.interface=ap0
-#
 
 ro.opengles.version=196610
 # ro.kernel.qemu=1
@@ -167,35 +144,10 @@ ro.kernel.zio=38,108,105,16
 #debug.hwui.render_dirty_regions=false
 
 
-# performance
-ro.mtk_perf_simple_start_win=1
-ro.mtk_perf_fast_start_win=1
-ro.mtk_perf_response_time=1
-
-# disable ipo for development
-sys.ipo.disable=1
-
-# identity
-Build.BRAND=MTK
-
-# +Extb M8HD-AnnaANNA-76, wangxiaodan.wt 20190715, added for sarsensor
-persist.function_for_sar=1
-# -Extb M8HD-AnnaANNA-76, wangxiaodan.wt 20190715, added for sarsensor
-
-# end of device/mediatek/system/common/system.prop
-
-#
-# ADDITIONAL_BUILD_PROPERTIES
-#
 ro.product.first_api_level=28
 ro.treble.enabled=true
 net.bt.name=Android
 
-ro.product.first_api_level=28
-ro.vendor.build.security_patch=2022-07-05
-ro.vendor.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
-ro.vendor.product.cpu.abilist32=armeabi-v7a,armeabi
-ro.vendor.product.cpu.abilist64=arm64-v8a
 ro.product.board=akita_row_wifi
 ro.board.platform=mt6761
 ro.hwui.use_vulkan=
