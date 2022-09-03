@@ -5,4 +5,4 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := device/lenovo/akita_row_wifi
+LOCAL_PATH := device/lenovo/TB8505F
