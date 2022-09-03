@@ -6,7 +6,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_akita_row_wifi.mk
+    $(LOCAL_DIR)/omni_akita_row_wifi.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_akita_row_wifi-eng
+    omni_akita_row_wifi-eng
